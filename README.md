@@ -25,3 +25,11 @@ Name | Role | email@example.com | +1 555 555 5555
   `reviews(id, user_id, company, item_id, rating INT, comment TEXT, created_at)`
 - Top 5 query example (by average rating):
   `SELECT item_id, AVG(rating) AS avg_rating FROM reviews WHERE company='dreamspace' GROUP BY item_id ORDER BY avg_rating DESC LIMIT 5;`
+
+
+  ##for sftp
+  - hosted on infinityfree 
+  - vscode extension used to upload files to server
+  - command pallete: SFTP: Config
+  - SFTP: Upload Proejct
+  - SFTP: Sync Local -> Remote
