@@ -42,6 +42,9 @@ h2{font-size:clamp(22px,3vw,30px);margin-top:24px}
 .kicker{font-size:13px;color:#64748b;text-transform:uppercase;letter-spacing:.12em}
 .property{display:flex;gap:16px}
 .property img{width:120px;height:90px;object-fit:cover;border-radius:10px;border:1px solid #e5e7eb}
+.product-card{transition:transform 0.2s ease,box-shadow 0.2s ease}
+.product-card:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(2,6,23,.12)}
+.recent-visit{background:#f8fafc;border:2px solid #e2e8f0;border-radius:12px;padding:16px;margin-bottom:16px}
 @media (max-width: 860px){
   .hero .wrap{grid-template-columns:1fr}
 }

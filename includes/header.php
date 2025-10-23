@@ -6,6 +6,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+  <meta name="google-site-verification" content="llyloLTciNgvL5VzD3w6gehJFp_Rfau_3SPNaaHCi9Y" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= htmlspecialchars($title) ?></title>
@@ -25,7 +26,8 @@
         <div class="menu" role="navigation" aria-label="Main">
           <a href="index.php" class="<?= $page==='home' ? 'active' : '' ?>">Home</a>
           <a href="about.php" class="<?= $page==='about' ? 'active' : '' ?>">About</a>
-          <a href="listings.php" class="<?= $page==='services' ? 'active' : '' ?>">Properties</a>
+          <a href="listings.php" class="<?= $page==='services' ? 'active' : '' ?>">Services</a>
+          <a href="properties.php" class="<?= $page==='properties' ? 'active' : '' ?>">Properties</a>
           <a href="news.php" class="<?= $page==='news' ? 'active' : '' ?>">News</a>
           <a href="contacts.php" class="<?= $page==='contacts' ? 'active' : '' ?>">Contacts</a>
         </div>
