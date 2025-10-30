@@ -19,11 +19,11 @@
 <div class="card">
   <h3>Key facts</h3>
   <p><?= htmlspecialchars($facts) ?></p>
-  <p class="kicker">Marketplace hooks (for later):</p>
+  <!-- <p class="kicker">Marketplace hooks (for later):</p>
   <ul>
     <li>On page load, log visit: <code>track_visit($user_id, 'dreamspace', <?= (int)$id ?>)</code></li>
     <li>Show review form and average rating for this property.</li>
-  </ul>
+  </ul> -->
   <p style="margin-top: 24px;">
     <a class="btn" href="contacts.php">Contact Us</a>
     <a class="btn" href="properties.php" style="background: #374151; margin-left: 8px;">Back to Properties</a>
