@@ -28,6 +28,7 @@
           <a href="about.php" class="<?= $page==='about' ? 'active' : '' ?>">About</a>
           <a href="listings.php" class="<?= $page==='services' ? 'active' : '' ?>">Services</a>
           <a href="properties.php" class="<?= $page==='properties' ? 'active' : '' ?>">Properties</a>
+          <a href="users.php" class="<?= $page==='users' ? 'active' : '' ?>">Users</a>
           <a href="news.php" class="<?= $page==='news' ? 'active' : '' ?>">News</a>
           <a href="contacts.php" class="<?= $page==='contacts' ? 'active' : '' ?>">Contacts</a>
         </div>

@@ -1,11 +1,10 @@
-
 ServerSignature Off
 Options -Indexes
 
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteCond %{HTTPS} !=on
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
 <IfModule mod_headers.c>
@@ -17,9 +16,3 @@ RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 </IfModule>
 
 IndexIgnore *
-
-<IfModule mod_authz_core.c>
-  <Directory "data">
-    Require all denied
-  </Directory>
-</IfModule>

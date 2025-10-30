@@ -8,7 +8,7 @@
     105 => ["Cozy Studio","Greenwood","$1,600/mo","Studio • 1 bath • 520 sqft"],
     106 => ["Luxury Penthouse","Downtown","$1,200,000","3 bed • 3 bath • 2,800 sqft"],
     107 => ["Suburban Villa","Oak Hills","$650,000","4 bed • 4 bath • 3,200 sqft"],
-    108 => ["Waterfront Condo","Harbor View","$850,000","2 bed • 2 bath • 1,400 sqft"],
+    108 => ["Waterfront Villa","Harbor View","$850,000","2 bed • 2 bath • 1,400 sqft"],
   ];
   $id = isset($_GET['id']) ? (int)$_GET['id'] : 0;
   if (!isset($all[$id])) { echo '<p class="notice error">Property not found.</p>'; include 'includes/footer.php'; exit; }
