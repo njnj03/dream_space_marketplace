@@ -6,6 +6,7 @@ $companyEndpoints = [
   'Company A' => 'http://neeraja272.infinityfreeapp.com/api/users.php?token=dreamspace_secret_2025', // local this site
   'Company B' => 'https://tanishadave.great-site.net/api/get_users.php?token=secret_2025',
   'Company C' => 'https://dhruvjcmpe272.page.gd/api/get_users.php?token=dhruvs_secret_api',
+  'Company D' => 'https://mchopra.great-site.net/api/get_users.php?token=brew_secret_2025',
 ];
 
 // Optional token shared across group (match server setting if enabled)
@@ -75,7 +76,7 @@ usort($allUsers, function($a, $b){
 ?>
 
 <h1>Users Across Companies</h1>
-<p class="lead">Aggregated list of users from DreamSpace Realty, Odessey Horizons, and Ember Interactive via cURL. Follows the shared JSON schema.</p>
+<p class="lead">Aggregated list of users from DreamSpace Realty, Odessey Horizons, Brew & Blend Cafe and Ember Interactive via cURL. Follows the shared JSON schema.</p>
 
 <?php if (!empty($errors)): ?>
   <div class="notice error">

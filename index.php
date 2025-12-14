@@ -1,4 +1,15 @@
 <?php $page='home'; $companyName='DreamSpace Realty'; include 'includes/header.php'; ?>
+<?php
+// auth.php is already included in header.php
+$isLoggedIn = is_user_logged_in();
+$userName = $_SESSION['user_name'] ?? '';
+?>
+<?php if ($isLoggedIn): ?>
+  <div class="card" style="background: #dbeafe; border: 2px solid #93c5fd; margin-bottom: 24px;">
+    <h3>Welcome back, <?= htmlspecialchars($userName) ?>!</h3>
+    <p>You're signed in. <a href="account.php">View your account</a> or <a href="listings.php">browse our services</a>.</p>
+  </div>
+<?php endif; ?>
 <section class="hero">
   <div class="wrap">
     <div>

@@ -1,4 +1,7 @@
 <?php
+  // Include auth functions first to handle marketplace authentication
+  require_once __DIR__ . '/auth.php';
+  
   if (!isset($page)) $page = "";
   if (!isset($companyName)) $companyName = "DreamSpace Realty";
   $title = $companyName . " — " . ucfirst($page);
@@ -31,6 +34,15 @@
           <a href="users.php" class="<?= $page==='users' ? 'active' : '' ?>">Users</a>
           <a href="news.php" class="<?= $page==='news' ? 'active' : '' ?>">News</a>
           <a href="contacts.php" class="<?= $page==='contacts' ? 'active' : '' ?>">Contacts</a>
+          <?php
+          // auth.php is already included at the top of this file
+          if (function_exists('is_user_logged_in') && is_user_logged_in()): ?>
+              <a href="account.php" class="<?= $page==='account' ? 'active' : '' ?>">My Account</a>
+              <a href="logout.php">Sign Out</a>
+            <?php else: ?>
+              <a href="login.php" class="<?= $page==='login' ? 'active' : '' ?>">Sign In</a>
+              <a href="register.php" class="<?= $page==='register' ? 'active' : '' ?>">Register</a>
+            <?php endif; ?>
         </div>
       </div>
     </nav>
