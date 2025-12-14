@@ -18,7 +18,6 @@ $userName = $_SESSION['user_name'] ?? '';
       <p>
   <a class="btn" href="listings.php">Explore Services</a>
   <a class="btn" href="properties.php" style="background:#059669;margin-left:0.5rem;">View Properties</a>
-  <a class="btn" href="admin/login.php" style="background:#374151;margin-left:0.5rem;">Admin Login</a>
 </p>
 
     </div>

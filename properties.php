@@ -16,7 +16,7 @@
 <div class="grid">
 <?php foreach ($properties as $p): ?>
   <div class="card property product-card">
-    <img src="<?= htmlspecialchars($p['img']) ?>" alt="<?= htmlspecialchars($p['title']) ?>">
+    <img src="<?= htmlspecialchars($p['img']) ?>" alt="<?= htmlspecialchars($p['title']) ?>" loading="lazy">
     <div>
       <h3><?= htmlspecialchars($p['title']) ?></h3>
       <p><strong><?= htmlspecialchars($p['price']) ?></strong> — <?= htmlspecialchars($p['type']) ?> in <?= htmlspecialchars($p['neighborhood']) ?></p>
